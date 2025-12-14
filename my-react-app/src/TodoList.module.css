@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.Container {
+    position: relative;
+    bottom: 18vw;
+    right: 35vw;
+}
+
+.takeInputs {
+    width: 43vw;
+    padding: 20px 15px;
+    border: 1px solid hsl(0, 0%, 85%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 6px;
+    height: 200px;
+    margin-left: 15vw;
+    background-color: hsl(0, 0%, 100%);
+
+}
+
+.Container div ul {
+    margin-left: 13vw;
+}
+
+ul li {
+    list-style: none;
+}
+
+.upper {
+    font-size: 20px;
+    font-weight: 300;
+    display: flex;
+    gap: 10px
+}
+
+.tick {
+    cursor: pointer;
+}
+
+.lower {
+    color: hsla(0, 0%, 0%, 0.631);
+    font-size: 17px;
+    margin-left: 30px;
+    margin-top: -22px;
+    line-height: 8px;
+}
+
+.task {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 10px;
+    font-size: 1.1rem;
+    font-family: "Saira", sans-serif;
+}
+
+.task:focus {
+    border: none;
+    outline: none;
+}
+
+.description {
+    width: 100%;
+    height: 100px;
+    border: none;
+    border-top: 1px solid hsl(0, 0%, 78%);
+    background-color: hsl(0, 0%, 100%);
+    padding: 10px;
+    font-size: 1rem;
+    font-family: "Saira", sans-serif;
+
+}
+
+.description:focus {
+    border-top: 1px solid hsl(0, 0%, 78%);
+    outline: none;
+}
+
+.date {
+    height: 30px;
+    border: 1px solid hsl(0, 0%, 78%);
+    background-color: hsl(0, 0%, 100%);
+    padding: 10px;
+    color: hsl(0deg 16.81% 53.33%);
+    font-size: 1rem;
+    font-family: "Saira", sans-serif;
+    width: 145px;
+}
+
+.button {
+    width: 100%;
+}
+
+.btn {
+    float: right;
+    font-size: 17px;
+    padding: 8px;
+    background: #eb0000;
+    border-radius: 6px;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.disDescription {
+    word-break: break-all;
+    line-height: 20px;
+}
+
+@media (max-width: 1100px) {
+
+    .container {
+        position: relative;
+        bottom: 15vw;
+        right: 35vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .takeInputs {
+        width: 74vw;
+    }
+
+    .Container {
+        bottom: 11vw;
+        /* left: 12px; */
+        right: 51vw;
+    }
+}
+
+@media (max-width: 550px) {
+    .Container div ul {
+        width: 60vw;
+    }
+}

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Saira", sans-serif;
+}
+
+.taskContainer {
+    margin-left: 34%;
+    margin-top: 3%;
+}
+
+.taskContainer {
+    list-style: none;
+    margin-left: 34%;
+    margin-top: 4%;
+    width: 50%;
+}
+
+.date {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.upperDisplay p {
+    margin-bottom: 0;
+}
+
+
+.lowerDisplay {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 1vw;
+}
+
+.lowerDisplay p {
+    font-size: 1.3rem;
+}
+
+.lowerDisplay img {
+    width: 32px;
+}
+
+@media (max-width: 1000px) {
+
+    .taskContainer {
+        margin-top: 6%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .taskContainer {
+        margin-top: 11%;
+        margin-left: 11%;
+        width: 65vw;
+    }
+
+    h1 {
+        margin-left: 18vw;
+        font-size: 2rem;
+    }
+}

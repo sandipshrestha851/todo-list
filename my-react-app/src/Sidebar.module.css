@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+.sidebarContainer,
+.none {
+    border: 1px solid hsl(0, 0%, 71%);
+    width: 15vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: hsl(0, 0%, 93%);
+    padding: 22px 10px 22px 15px;
+}
+
+.cross img {
+    position: absolute;
+    right: 6px;
+    width: 7vw;
+    top: 12px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger img {
+    display: none;
+    position: absolute;
+    top: 16px;
+    left: 20px;
+    width: 8vw;
+    cursor: pointer;
+}
+
+.accountRow {
+    display: flex;
+    gap: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 12px;
+}
+
+.accountRow p {
+    font-family: Arial, sans-serif;
+}
+
+.sidebarActivities {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.sidebarActivities li {
+    font-family: "Saira", sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 45px;
+    padding: 6px 12px;
+}
+
+.sidebarActivities li:not(.active):hover {
+    background-color: hsl(0, 0%, 90%);
+}
+
+.active {
+    background-color: hsl(0, 0%, 80%);
+}
+
+.accountLogo {
+    width: 2vw;
+    height: 2vw;
+    border-radius: 24px;
+}
+
+@media (max-width:2000px) {
+
+    .sidebarContainer,
+    .none {
+        width: 20vw;
+    }
+}
+
+@media (max-width:1500px) {
+
+    .sidebarContainer,
+    .none {
+        width: 30vw;
+    }
+
+    
+}
+
+@media (max-width:1000px){
+
+    .accountLogo{
+        width: 3vw;
+        height: 3vw;
+    }
+}
+@media (max-width:900px){
+
+    .accountLogo{
+        width: 4vw;
+        height: 4vw;
+    }
+}
+
+@media (max-width:700px) {
+
+    .sidebarContainer,
+    .none {
+        width: 30vw;
+    }
+
+
+}
+
+@media (max-width:600px) {
+
+    .sidebarContainer,
+    .none {
+        width: 50vw;
+        z-index: 2;
+        /* left: -100%; */
+    }
+
+    .hamburger img {
+        display: block;
+    }
+
+    .accountLogo {
+        width: 6vw;
+        height: 6vw;
+    }
+
+    .cross img {
+        display: block;
+    }
+
+
+    .none {
+        display: none;
+    }
+
+}
